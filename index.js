@@ -208,7 +208,7 @@ Practice accessing data above by console.log-ing following items:
 (no functions needed) */
 
 //(1) Name of the first artist (0th index) in the array
-console.log(artists[0]);
+console.log(artists[0].name);
 
 //(2) Bio of the third artist (2nd index) in the array 
 console.log(artists[2].bio);
@@ -234,7 +234,7 @@ function getArtistByIndex(array, index) {
   return `the artist at index ${array[index]['id']} is ${array[index]['name']}`;
 }
 
-console.log('task 3', getArtistByIndex(artists, 19));
+console.log('task 3', getArtistByIndex(artists, 0));
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 

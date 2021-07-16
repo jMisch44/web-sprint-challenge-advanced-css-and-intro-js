@@ -135,61 +135,66 @@ button:hover{
     width:100%;
 }
 
-/*media queries*/
+/*Media Query Styles*/
 
-/*media query for 1000px*/
+/*Media Query for 1000px*/
 @media(max-width: 1000px){
     .artists-container{
         flex-flow: column wrap;
         justify-content: space-evenly;
         align-items: center;
     }
+
     .artist{
         width:80%;
         
     }
+
     .artist img{
         background-size: cover;
         height: auto;
     }
 }
 
-/* media query for 800px*/
+/* Media Query for 800px*/
 @media(max-width: 800px){
     nav{
         width: 50%;
     }
 }
 
-/*media queries for 500px*/
-
+/*Media Queries for 500px*/
 @media (max-width: 500px){
-    
     nav a{
         font-size: 2rem;
     }
+
     nav a:first-child{
         font-weight: bold;
     }
+
     h1{
         font-weight: bold;
         font-size: 4rem;
     }
+
     .title-container div{
         background-size: auto 220%;
         width: 100%;
     }
+
     .title-container hr{
         width:100%;
     }
+
     .artists-container a{
         font-size: 1.8rem;
     }
+
     .bio{
         width: 100%;
         line-height: 1.2;
         font-size: 1.4rem;
         margin: 4% auto;
     }
-    
 }
