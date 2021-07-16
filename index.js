@@ -247,15 +247,13 @@ If correct, the function should return ["Salvador Dali", "Frida Kahlo"]*/
 // Hint - Look up the .split() method
 
 function get20s(array) {
-  const yearsArray = [];
-  // const newEndArray = [];
+  const endArray = [];
   for(let i = 0; i < array.length; i++){
-    yearsArray.push(array[i].years.split(' '));
-    // if(yearsArray >= 1900 && array[i].years.split(' ') < 2000 ){
-    //   newArray.push(array[i][name]);
-    // }
+    if(array[i].years.split(' ') >= '1900' && array[i].years.split(' ') < '2000'){
+      endArray.push(array[i].name);
+    }
   }
-  return yearsArray
+  return endArray;
 }
 
 console.log('task 4', get20s(artists));
@@ -298,7 +296,7 @@ function addArtist(array) {
   array.push( 
     {id: 20,
     name: 'Jennifer Misch', 
-    years: 1997 - 'now',
+    years: '1997 - 2021',
     genre: 'Web Design', 
     nationality: 'American',
     bio: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec maximus a eros a sagittis.'}
@@ -326,7 +324,7 @@ function lotsOfArt(array) {
   return newArray
 
 }
-
+console.log('task 7', lotsOfArt(artists));
 
 /* ***** END OF TASKS ***** */
 
